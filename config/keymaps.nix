@@ -489,5 +489,13 @@
         desc = "Previous Tab";
       };
     }
+    {
+      mode = "n";
+      key = ":";
+      action = "<Plug>(cmdpalette)";
+      options = {
+        desc = "Open Floating Command Line";
+      };
+    }
   ];
 }
