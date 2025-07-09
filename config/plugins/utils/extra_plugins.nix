@@ -1,13 +1,14 @@
 { pkgs, ... }:
 {
   extraPlugins = with pkgs.vimPlugins; [
+    pkgs.vimPlugins."nui-nvim"
     (pkgs.vimUtils.buildVimPlugin {
-      name = "cmdpalette";
+      name = "fine-cmdline";
       src = pkgs.fetchFromGitHub {
-        owner = "hachy";
-        repo = "cmdpalette.nvim";
-        rev = "2656f481d08d6526847ade70670ffe3fa5020330";
-        hash = "sha256-iNi6JMS2ZutgSAygpYqkTTk2uG9lwm75dNhIsNNUlcU=";
+        owner = "VonHeikemen";
+        repo = "fine-cmdline.nvim";
+        rev = "7db181d1cb294581b12a036eadffffde762a118f";
+        hash = "sha256-Cx1KzSXOAMuCRx5/mt1DwGqRKs+FDU5vYXef4cagISU=";
       };
     })
   ];

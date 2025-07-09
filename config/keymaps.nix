@@ -491,10 +491,10 @@
     }
     {
       mode = "n";
-      key = ":";
-      action = "<Plug>(cmdpalette)";
+      key = "Q";
+      action = "<cmd>FineCmdline<CR>";
       options = {
-        desc = "Open Floating Command Line";
+        desc = "Open FLoating Command Line";
       };
     }
   ];
