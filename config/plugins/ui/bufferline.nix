@@ -11,6 +11,9 @@
           buffer_close_icon = "󰱝 ";
           modified_icon = "󰔯 ";
 
+          close_command = "lua MiniBufremove.delete()";
+          right_mouse_command = "lua MiniBufremove.delete()";
+
           offsets = [
             {
               filetype = "neo-tree";
@@ -64,7 +67,7 @@
     {
       mode = "n";
       key = "<leader>bd";
-      action = "<cmd>bdelete<cr>";
+      action = "<cmd>lua MiniBufremove.delete()<cr>";
       options = {
         desc = "Delete buffer";
       };
