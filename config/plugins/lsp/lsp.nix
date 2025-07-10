@@ -7,13 +7,16 @@
     lsp-format = {
       enable = true;
     };
-    helm = {
+    clangd-extensions = {
       enable = true;
     };
     lsp = {
       enable = true;
       inlayHints = true;
       servers = {
+        clangd = {
+          enable = true;
+        };
         html = {
           enable = true;
         };
@@ -35,26 +38,8 @@
         gopls = {
           enable = true;
         };
-        terraformls = {
-          enable = true;
-        };
-        ansiblels = {
-          enable = true;
-        };
         jsonls = {
           enable = true;
-        };
-        helm_ls = {
-          enable = true;
-          extraOptions = {
-            settings = {
-              "helm_ls" = {
-                yamlls = {
-                  path = "${pkgs.yaml-language-server}/bin/yaml-language-server";
-                };
-              };
-            };
-          };
         };
         yamlls = {
           enable = true;
