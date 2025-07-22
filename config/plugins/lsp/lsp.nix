@@ -62,6 +62,9 @@
             };
           };
         };
+        typos_lsp = {
+          enable = true;
+        };
       };
 
       keymaps = {
